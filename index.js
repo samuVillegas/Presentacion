@@ -12,15 +12,15 @@ app.use(cors());
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'static')))
 
-app.use('/api/',require('./routes/students'))
+app.use('/api/', require('./routes/students'))
 
-app.get('/prueba/', (req,res)=>{
+app.get('/prueba/', (req, res) => {
     res.sendFile(`${__dirname}/static/templates/prueba.html`)
 })
 
 app.set('port', process.env.PORT || 6000);
 
-app.listen(app.get('port') , () => {
+app.listen(app.get('port'), () => {
     console.log(`Server running ${app.get('port')}`);
 })
 
