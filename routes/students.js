@@ -22,6 +22,9 @@ router.get('/wilmer-perez-tortilla/',(req,res)=>{
 
 
 
+router.get('/David-Giraldo-Cerveza', (req, res) => {
+    res.sendFile(`${mainRoute}davidGiraldo.html`);
+})
 
 router.get('/jorge-tarifa-beer/', (req,res)=>{
     res.sendFile(`${mainRoute}jorge.html`);
