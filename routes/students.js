@@ -9,5 +9,9 @@ router.get('/prueba/',(req,res)=>{
     res.sendFile(`${mainRoute}prueba.html`);
 })
 
+router.get('/felix-rodriguez-pasticho', (req, res)=>{
+    res.sendFile(`${mainRoute}felix.html`)
+})
+
 
 module.exports = router;
