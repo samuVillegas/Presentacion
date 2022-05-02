@@ -10,4 +10,10 @@ router.get('/prueba/',(req,res)=>{
 })
 
 
+router.get('/jorge-tarifa-beer/', (req,res)=>{
+    res.sendFile(`${mainRoute}jorge.html`);
+})
+
+
+
 module.exports = router;
