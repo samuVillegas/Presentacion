@@ -18,6 +18,10 @@ app.get('/prueba/', (req,res)=>{
     res.sendFile(`${__dirname}/static/templates/prueba.html`)
 })
 
+app.get('/feature-jorge-tarifa-red/', (req,res)=>{
+    res.sendFile(`${__dirname}/static/templates/jorge.html`)
+})
+
 app.set('port', process.env.PORT || 6000);
 
 app.listen(app.get('port') , () => {
