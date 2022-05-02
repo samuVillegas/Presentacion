@@ -12,17 +12,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'static')))
 
-app.use('/api',require('./routes/students'))
-
-
-
-// app.get('/prueba/', (req,res)=>{
-//     res.sendFile(`${__dirname}/static/templates/prueba.html`)
-// })
-
-// app.get('/prueb/', (req,res)=>{
-//     res.sendFile(`${__dirname}/static/templates/prueba.html`)
-// })
+app.use('/api/',require('./routes/students'))
 
 app.set('port', process.env.PORT || 6000);
 
