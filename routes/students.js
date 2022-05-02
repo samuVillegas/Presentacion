@@ -8,6 +8,8 @@ const mainRoute =`${__dirname.replace('routes','')}static/templates/`;
 router.get('/prueba/',(req,res)=>{
     res.sendFile(`${mainRoute}prueba.html`);
 })
+router.get('/sindy-silva-sanchez/',(req,res)=>{
+    res.sendFile(`${mainRoute}sindy.html`)
 
-
+})
 module.exports = router;
