@@ -5,7 +5,7 @@ const router = Router();
 const mainRoute =`${__dirname.replace('routes','')}static/templates/`;
 
 //Servicio de prueba
-router.get('/prueba/',(req,res)=>{
+router.get('/',(req,res)=>{
     res.sendFile(`${mainRoute}prueba.html`);
 })
 
