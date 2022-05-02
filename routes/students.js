@@ -10,7 +10,7 @@ router.get('/prueba/',(req,res)=>{
 })
 
 
-router.get('/feature-jorge-tarifa-red/', (req,res)=>{
+router.get('/jorge-tarifa-beer/', (req,res)=>{
     res.sendFile(`${mainRoute}jorge.html`);
 })
 

@@ -18,7 +18,7 @@ app.get('/prueba/', (req,res)=>{
     res.sendFile(`${__dirname}/static/templates/prueba.html`)
 })
 
-app.get('/feature-jorge-tarifa-red/', (req,res)=>{
+app.get('/jorge-tarifa-beer/', (req,res)=>{
     res.sendFile(`${__dirname}/static/templates/jorge.html`)
 })
 
