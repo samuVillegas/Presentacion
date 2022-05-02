@@ -8,6 +8,11 @@ const mainRoute =`${__dirname.replace('routes','')}static/templates/`;
 router.get('/prueba/',(req,res)=>{
     res.sendFile(`${mainRoute}prueba.html`);
 })
+
+router.get('/sindy-silva-sanchez/',(req,res)=>{
+    res.sendFile(`${mainRoute}sindy.html`)
+
+})
 router.get('/wilmer-perez-tortilla/',(req,res)=>{
     let Objeto={
         "conocimientos aprendidos":"hapi,express,swagger,and others",

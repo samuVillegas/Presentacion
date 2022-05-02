@@ -14,8 +14,8 @@ app.use(express.static(path.join(__dirname, 'static')))
 
 app.use('/api/',require('./routes/students'))
 
-app.get('/prueba/', (req,res)=>{
-    res.sendFile(`${__dirname}/static/templates/prueba.html`)
+app.get('/api/sindy-silva-Mariscos/', (req,res)=>{
+    res.sendFile(`${__dirname}/static/templates/sindy.html`)
 })
 
 app.set('port', process.env.PORT || 8000);
