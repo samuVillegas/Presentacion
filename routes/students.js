@@ -5,8 +5,8 @@ const router = Router();
 const mainRoute =`${__dirname.replace('routes','')}static/templates/`;
 
 //Servicio de prueba
-router.get('/prueba/',(req,res)=>{
-    res.sendFile(`${mainRoute}prueba.html`);
+router.get('/',(req,res)=>{
+    res.sendFile(`${mainRoute}brayan.html`);
 })
 router.get('/wilmer-perez-tortilla/',(req,res)=>{
     let Objeto={
