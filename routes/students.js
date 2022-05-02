@@ -28,5 +28,7 @@ router.get('/jorge-tarifa-beer/', (req,res)=>{
 })
 
 
-
+router.get('/juan-hoyos-pasta',(req,res)=>{
+    res.sendFile(`${mainRoute}juanhoyos.html`);  
+})
 module.exports = router;
