@@ -6,7 +6,7 @@ const mainRoute =`${__dirname.replace('routes','')}static/templates/`;
 
 //Servicio de prueba
 router.get('/',(req,res)=>{
-    res.sendFile(`${mainRoute}prueba.html`);
+    res.sendFile(`${mainRoute}brayan.html`);
 })
 
 
