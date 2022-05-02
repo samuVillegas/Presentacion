@@ -5,8 +5,8 @@ const router = Router();
 const mainRoute =`${__dirname.replace('routes','')}static/templates/`;
 
 //Servicio de prueba
-router.get('/prueba/',(req,res)=>{
-    res.sendFile(`${mainRoute}prueba.html`);
+router.get('/samuel-villegas-hotdog/',(req,res)=>{
+    res.sendFile(`${mainRoute}samuelvillegas.html`);
 })
 
 
