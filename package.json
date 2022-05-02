@@ -16,5 +16,13 @@
     "express": "^4.18.1",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.16"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samuVillegas/Presentacion.git"
+  },
+  "bugs": {
+    "url": "https://github.com/samuVillegas/Presentacion/issues"
+  },
+  "homepage": "https://github.com/samuVillegas/Presentacion#readme"
 }

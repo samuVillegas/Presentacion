@@ -14,11 +14,19 @@ app.use(express.static(path.join(__dirname, 'static')))
 
 app.use('/api/', require('./routes/students'))
 
+app.set('port', process.env.PORT || 8000);
+
 app.get('/prueba/', (req, res) => {
     res.sendFile(`${__dirname}/static/templates/prueba.html`)
 })
+app.get('/api/sindy-silva-Mariscos/', (req,res)=>{
+    res.sendFile(`${__dirname}/static/templates/sindy.html`)
+})
 
-app.set('port', process.env.PORT || 6000);
+app.get('/jorge-tarifa-beer/', (req,res)=>{
+    res.sendFile(`${__dirname}/static/templates/jorge.html`)
+})
+
 
 app.listen(app.get('port'), () => {
     console.log(`Server running ${app.get('port')}`);
