@@ -5,7 +5,7 @@ const router = Router();
 const mainRoute =`${__dirname.replace('routes','')}static/templates/`;
 
 //Servicio de prueba
-router.get('/',(req,res)=>{
+router.get('/feature-Brayan-Gamboa-DeTodo',(req,res)=>{
     res.sendFile(`${mainRoute}brayan.html`);
 })
 

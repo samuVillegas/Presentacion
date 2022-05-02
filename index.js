@@ -12,7 +12,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'static')))
 
-app.use('/api/feature-Brayan-Gamboa-DeTodo',require('./routes/students'))
+app.use('/api',require('./routes/students'))
 
 
 
