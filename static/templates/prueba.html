@@ -1,12 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prueba</title>
 </head>
+<style>
+    #hola:hover {
+        -webkit-animation: tiembla 0.1s infinite;
+    }
+
+    @-webkit-keyframes tiembla {
+        0% {
+            -webkit-transform: rotateZ(-5deg);
+        }
+
+        50% {
+            -webkit-transform: rotateZ(0deg) scale(.8);
+        }
+
+        100% {
+            -webkit-transform: rotateZ(5deg);
+        }
+    }
+</style>
+<script>
+
+    try {
+
+
+        fetch('/api/wilmer-perez-tortilla')
+            .then((resp) => resp.json()).then(
+                (res) => document.querySelector("#hola").innerHTML = Object.entries(res)
+
+
+
+            )
+
+    } catch (error) {
+
+    }
+
+</script>
+
+
 <body>
     <h1>Hola soy la prueba</h1>
+    <h2 id="hola"></h2>
 </body>
+
 </html>
