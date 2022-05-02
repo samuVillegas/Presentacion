@@ -7,10 +7,7 @@ const mainRoute =`${__dirname.replace('routes','')}static/templates/`;
 //Servicio de prueba
 router.get('/prueba/',(req,res)=>{
     res.sendFile(`${mainRoute}prueba.html`);
-});
+})
 
-router.get('/marco-pineda-frijoles',(req,res)=>{
-    res.sendFile(`${mainRoute}/marco.html`);
-});
 
 module.exports = router;
