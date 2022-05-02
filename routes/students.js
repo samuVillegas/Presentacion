@@ -22,6 +22,11 @@ router.get('/wilmer-perez-tortilla/',(req,res)=>{
 
 
 
+
+router.get('/ingrid-argote-pizza',(req,res)=>{
+    res.sendFile(`${mainRoute}ingrid.html`)
+})
+
 router.get('/David-Giraldo-Cerveza', (req, res) => {
     res.sendFile(`${mainRoute}davidGiraldo.html`);
 })
@@ -34,4 +39,5 @@ router.get('/jorge-tarifa-beer/', (req,res)=>{
 router.get('/juan-hoyos-pasta',(req,res)=>{
     res.sendFile(`${mainRoute}juanhoyos.html`);  
 })
+
 module.exports = router;
